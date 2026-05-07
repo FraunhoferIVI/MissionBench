@@ -1,0 +1,80 @@
+# follow the naming convention e.g gpt_<>, gemini_<>, aws_<>
+gemini:
+    gemini_3.1_pro:
+      model_name: "gemini-3.1-pro-preview"
+    gemini_3_1_flash_lite:
+      model_name: "gemini-3.1-flash-lite-preview"
+    gemini_3_pro:
+      model_name: "gemini-3-pro-preview"
+    gemini_3_flash:
+      model_name: "gemini-3-flash-preview"
+    gemini_2_5_flash:
+      model_name: "gemini-2.5-flash"
+    gemini_2_5_flash_lite:
+      model_name: "gemini-2.5-flash-lite"
+    gemini_2_5_pro:
+      model_name: "gemini-2.5-pro"
+    gemini_2_0_flash_lite:
+      model_name: "gemini-2.0-flash-lite"
+    gemma3_27B:
+      model_name: "gemma-3-27b-it" # open weights model
+    gemini_robotics_er_1_5:
+      model_name: "gemini-robotics-er-1.5-preview"
+    gemini_robotics_er_1_6:
+      model_name: "gemini-robotics-er-1.6-preview"
+    gemma_4_31B:
+      model_name: "gemma-4-31b-it" # open weights model
+gpt:
+    gpt_5:
+      model_name: "gpt-5-2025-08-07"
+    gpt5.4:
+      model_name: "gpt-5.4"
+    gpt5.4_mini:
+      model_name: "gpt-5.4-mini"
+    gpt_5_mini:
+      model_name: "gpt-5-mini-2025-08-07"
+    gpt_4o_mini:
+      model_name: "gpt-4o-mini"
+    gpt_4:
+      model_name: "gpt-4.1-2025-04-14"
+
+aws:
+    aws_nova_premier:
+      model_name: "us.amazon.nova-premier-v1:0"
+    aws_nova_pro:
+      model_name: "us.amazon.nova-pro-v1:0"
+
+anthropic:
+    anthropic_claudesonnet_4_5:
+      model_name: "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+    anthropic_claude_opus_4_6:  
+      model_name: "us.anthropic.claude-opus-4-6-v1"
+    anthropic_claudesonnet_4_6:
+      model_name: "us.anthropic.claude-sonnet-4-6"
+
+qwen: 
+    qwen3_5:
+      model_name: "qwen3.5-plus"
+    qwen3.5-27b:
+      model_name: "qwen3.5-27b"
+    qwen3_5_9b:
+      model_name: "llama-cpp-qwen3.5-9b" # local model
+    qwen3_5_4b:
+      model_name: "llama-cpp-qwen3.5-4b" # local model
+    qwen3_5_2b:
+      model_name: "llama-cpp-qwen3.5-2b" # local model
+    qwen3_5_27b:
+      model_name: "llama-cpp-qwen3.5-27b" # local model
+    qwen3_5_35b:
+      model_name: "llama-cpp-qwen3.5-35B-A3B" # local model
+    qwen3_6_35b:
+      model_name: "llama-cpp-qwen3.6-35B-A3B-Q8_0" # local model
+    qwen_3_32b:
+      model_name: "qwen.qwen3-32b-v1:0"
+    qwen:
+      model_name: "qwen.qwen3-vl-235b-a22b" 
+    qwen_3.6_27:
+      model_name: "llama-cpp-qwen3.6-27b"
+intern:
+  intern_vl_3.5:
+    model_name: "llama-cpp-intern_vl_3.5" # local model

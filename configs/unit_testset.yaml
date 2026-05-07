@@ -1,0 +1,30 @@
+example_demo:
+  resume_path: ""
+main_driver:
+  simulator:
+    rendering: false
+    CollisionCheckMode: True # True => Multirotor, False => ComputerVision
+  strategy: "step_by_step_1vlm_with_bb" # "spf_step_by_step" or "vanilla_step_by_step" or "step_by_step_1vlm" or "step_by_step_1vlm_with_bb"
+  image_related:
+    output_media_format: "webp"  # "webp" (default) or "mp4"
+    num_history_images: 3  # Number of images to pass to VLM (1=current only, 2=initial+current, 3=initial+prev+current, etc.)
+    capture_interval: 0  # meters for translation; yaw uses interval*10 degrees; <=0 keeps legacy behavior
+    img_enhancement_type:
+      - {"method": "resize", "target_size": "1920,1080"} # adding arrows
+
+  resume_exp: false
+  results_dir_to_resume: ""
+  val_mission_file: "dataset/test_unittest_missions.yaml" # "manip" or "pat" 
+  full_validation_set: true
+  scenario_names:
+    - "grey_car_unittest_mission30"  #yard_mission3, "grey_car_unittest_mission30" "advertisment_Board_mission17" "deer_statue_mission15" "main_road_mission3"
+  repeat: 1
+  model_related:
+    model_names:
+      - "llama-cpp-qwen3.5-2b" # "gemini-3-flash-preview" "gpt-4o-mini", "gemini-3.1-pro-preview", 
+    temperature: 0.7
+    thinking_level: low
+    task_gt_eval_model: "llama-cpp-qwen3.5-2b"
+  rate_limit_delay: 0.5
+  # Email configuration (optional)
+  results_email: ""

@@ -1,0 +1,71 @@
+{
+  "SettingsVersion": 2.0,
+  "SimMode": "Multirotor",
+  "Recording": {
+    "RecordOnMove": false,
+    "RecordInterval": 0.05,
+    "Folder": "",
+    "Enabled": false,
+    "Cameras": [
+      {
+        "CameraName": "high_res",
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "VehicleName": "Drone1",
+        "Compress": true
+      }
+    ]
+  },
+  "Vehicles": {
+    "SimpleFlight": {
+      "VehicleType": "SimpleFlight",
+      "X": 0,
+      "Y": 0,
+      "Z": 0,
+      "Roll": 0, 
+      "Pitch": 0,
+      "Yaw": 0,
+      "AutoCreate": true,
+      "Cameras": {
+        "0": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90
+            },
+            {
+              "ImageType": 2,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "PixelsAsFloat": true
+            }
+          ],
+          "X": 0, "Y": 0.00, "Z": 0,
+          "Pitch": -45, "Roll": 0.0, "Yaw": 0.0
+        },
+        "3": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90
+            },
+            {
+              "ImageType": 2,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "PixelsAsFloat": true
+            }
+          ],
+          "X": 0, "Y": 0.00, "Z": 0,
+          "Pitch": -90, "Roll": 0.0, "Yaw": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "SettingsVersion": 2.0,
+  "SimMode": "ComputerVision",
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "Width": 1920,
+        "Height": 1080,
+        "FOV_Degrees": 90
+      }
+    ]
+  },
+  "SegmentationSettings": {
+    "InitMethod": "CommonObjectsRandomIDs",
+    "MeshNamingMethod": "StaticMeshName",
+    "OverrideExisting": false
+},
+  "SubWindows": [
+    {"WindowID": 0, "ImageType": 0, "CameraName": "0", "Visible": true}],
+    
+ "Recording": {
+
+        "RecordOnMove": true,
+
+        "RecordInterval": 0.05,
+
+         
+
+"Cameras": [
+    { "CameraName": "0", "ImageType": 0, "PixelsAsFloat": false, "VehicleName": "MyDrone", "Compress": true }
+]
+
+
+    },
+
+  "Vehicles": {
+    "MyDrone": {
+      "VehicleType": "ComputerVision",
+      "Cameras": {
+        "0": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90
+            }
+          ],
+          "X": 0, "Y": 0, "Z": 0,
+          "Pitch": -45, "Roll": 0, "Yaw": 0
+        }
+      },
+          "X": 0, "Y": 0, "Z": 0,
+          "Pitch": 0, "Roll": 0, "Yaw": 0
+    }
+  }
+}

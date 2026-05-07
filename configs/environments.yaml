@@ -1,0 +1,8 @@
+NHEnv: envs/NHEnv/Blocks/Binaries/Linux/Blocks
+CityEnv: envs/CityEnv/Blocks/Binaries/Linux/Blocks
+ForestEnv: envs/ForestEnv/Blocks/Binaries/Linux/Blocks
+drive_links:
+  NHEnv: https://drive.google.com/file/d/1DoMhWC6ErkIzwytvVXVK3eOZuHUuG-gd/view?usp=sharing
+  CityEnv: https://drive.google.com/file/d/1-K_Iug5NP3JNPGXgmV3QmQK204OrpdyI/view?usp=sharing
+  ForestEnv: https://drive.google.com/file/d/1SyAln5_xKSrjsXxxxQu75ACK0OJpO5o2/view?usp=sharing
+  test_dataset: https://drive.google.com/file/d/1N68ucjhKE-0FhvWK2qWtnUN-jtVrQek4/view?usp=sharing

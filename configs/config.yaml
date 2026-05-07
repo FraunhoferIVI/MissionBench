@@ -1,0 +1,4 @@
+environment: NHEnv
+rendering: false
+ActiveSimMode: Multirotor
+CollisionCheckMode: true
