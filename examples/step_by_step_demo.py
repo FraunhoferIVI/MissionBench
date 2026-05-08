@@ -437,7 +437,7 @@ def run_step_by_step_algorithm(
 # =============================================================================
 
 
-def main(benchmark_dir = "/media/uam/25560a30-d30f-4830-bcc4-31ffd6c66632/home/uam/nava/benchmark", mission_type="Visual_Inspection_high_altitude"):
+def main(benchmark_dir=None, mission_type=None):
     """
     Place the benchmark directory in the same level as the langgraph-ivi repository.
     Main function demonstrating two-stage planning.

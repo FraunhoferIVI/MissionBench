@@ -164,7 +164,7 @@ if __name__ == "__main__":
         exp_path = sys.argv[1]
     else:
         # Default example path
-        exp_path = "/home/uam/taehyoung/suman/COLM/MissionBench/data/results/step_by_step_1vlm/main_road_mission3/gemini-3-flash-preview/resize_1920,1080/20260310_162105_exp_000015_gemini-3-flash-preview_rep3_main_road_mission3"
+        raise ValueError("Please provide the experiment path as an argument.")
     
     print(f"Processing experiment: {exp_path}")
     result_file = create_results_json(exp_path)
