@@ -129,7 +129,7 @@ This includes:
 
 ## License
 
-[CC BY-NC-SA 4.0](LICENSE)
+[CC BY 4.0](LICENSE)
 
 ## References
 - [AirSim](https://github.com/microsoft/airsim)
