@@ -1,0 +1,5 @@
+main_road_mission3: Patrol/NHEnv/main_road_mission3/mission_config.yaml
+grey_car_unittest_mission30: Visual_Inspection/NHEnv/grey_car_unittest_mission30/mission_config.yaml # unittest
+deer_statue_mission15: Visual_Inspection/NHEnv/deer_statue_mission15/mission_config.yaml
+advertisment_Board_mission17: Visual_Inspection/NHEnv/advertisment_Board_mission17/mission_config.yaml
+yard_mission3: Manipulation/NHEnv/yard_mission3/mission_config.yaml

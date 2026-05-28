@@ -4,7 +4,7 @@ main_driver:
   simulator:
     rendering: false
     CollisionCheckMode: True # True => Multirotor, False => ComputerVision
-  strategy: "step_by_step_1vlm_with_bb" # "spf_step_by_step" or "vanilla_step_by_step" or "step_by_step_1vlm" or "step_by_step_1vlm_with_bb"
+  strategy: "step_by_step_zeroshot" # "step_by_step_zeroshot", "spf_step_by_step" or "vanilla_step_by_step" or "step_by_step_1vlm" or "step_by_step_1vlm_with_bb"
   image_related:
     output_media_format: "webp"  # "webp" (default) or "mp4"
     num_history_images: 3  # Number of images to pass to VLM (1=current only, 2=initial+current, 3=initial+prev+current, etc.)
@@ -21,10 +21,10 @@ main_driver:
   repeat: 1
   model_related:
     model_names:
-      - "llama-cpp-qwen3.5-2b" # "gemini-3-flash-preview" "gpt-4o-mini", "gemini-3.1-pro-preview", 
+      - "gemini-3-flash-preview" # "gemini-3-flash-preview" "gpt-4o-mini", "gemini-3.1-pro-preview", 
     temperature: 0.7
     thinking_level: low
-    task_gt_eval_model: "llama-cpp-qwen3.5-2b"
+    task_gt_eval_model: "gemini-3-flash-preview"
   rate_limit_delay: 0.5
   # Email configuration (optional)
   results_email: ""

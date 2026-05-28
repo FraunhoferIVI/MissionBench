@@ -6,6 +6,7 @@ STRATEGY_TO_HIGH_LEVEL_PROMPT_TYPE = {
     "vanilla_step_by_step": "step_by_step",
     "step_by_step_1vlm": "step_by_step_1vlm",
     "step_by_step_1vlm_with_bb": "step_by_step_1vlm_with_bb",
+    "step_by_step_zeroshot": "step_by_step_zeroshot",
 }
 
 

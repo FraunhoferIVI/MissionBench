@@ -2,7 +2,8 @@ from .prompts.basic_missions.basic_prompt import basic_prompt, refine_prompt_low
 from .prompts.basic_missions.step_by_step import step_by_step_prompt, should_continue_navigation_prompt, step_by_step_1vlm_prompt, step_by_step_1vlm_with_bb_prompt
 from .prompts.basic_missions.evaluation_prompt import task_gt_evaluation_prompt
 from .prompts.proxy_prompts.bb_and_depth_prompt import bb_and_depth_prediction_prompt
-from .prompts.system_prompt import step_by_step_1vlm_system_prompt
+from .prompts.system_prompt import step_by_step_1vlm_system_prompt, step_by_step_1vlm_system_zeroshot
+from .prompts.zeroshot_prompt import step_by_step_zeroshot
 import yaml
 
 def generate_prompt(
@@ -21,8 +22,12 @@ def generate_prompt(
         return basic_prompt(**kwargs)
     elif prompt_type == "step_by_step":
         return step_by_step_prompt(**kwargs)
+    elif prompt_type == "step_by_step_zeroshot":
+        return step_by_step_zeroshot(**kwargs)
     elif prompt_type == "step_by_step_1vlm_system":
         return step_by_step_1vlm_system_prompt(**kwargs)
+    elif prompt_type == "step_by_step_1vlm_system_zeroshot":
+        return step_by_step_1vlm_system_zeroshot(**kwargs)
     elif prompt_type == "step_by_step_1vlm":
         return step_by_step_1vlm_prompt(**kwargs)
     elif prompt_type == "step_by_step_1vlm_with_bb":

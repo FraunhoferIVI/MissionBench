@@ -48,6 +48,7 @@ STRATEGY_TO_HIGH_LEVEL_PROMPT_TYPE = {
     "vanilla_step_by_step": "step_by_step",
     "step_by_step_1vlm": "step_by_step_1vlm",
     "step_by_step_1vlm_with_bb": "step_by_step_1vlm_with_bb",
+    "step_by_step_zeroshot": "step_by_step_zeroshot",
 }
 
 _MAX_INTERMEDIATE_CAPTURE_STEPS = 120
@@ -317,6 +318,8 @@ def node_generate_step_by_step_action(state: StepByStepState) -> Dict:
     highlevel_prompt_type = _resolve_high_level_prompt_type(state)
     if highlevel_prompt_type in ("step_by_step_1vlm", "step_by_step_1vlm_with_bb"):
         system_prompt_type = "step_by_step_1vlm_system"
+    elif highlevel_prompt_type == "step_by_step_zeroshot":
+        system_prompt_type = "step_by_step_1vlm_system_zeroshot"
     else:        
         system_prompt_type = None  # for backward compatibility
 

@@ -76,6 +76,7 @@ class ExperimentRunner:
             'vanilla_step_by_step': build_step_by_step_graph,
             'step_by_step_1vlm': build_step_by_step_1vlmgraph,
             'step_by_step_1vlm_with_bb': build_step_by_step_1vlm_with_bb_graph,
+            'step_by_step_zeroshot': build_step_by_step_1vlmgraph,  # Use same graph but with zero-shot config
             # Add more strategies here as needed
         }
         

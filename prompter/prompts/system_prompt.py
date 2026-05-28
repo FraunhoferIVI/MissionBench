@@ -108,3 +108,8 @@ STRICT OUTPUT REQUIREMENTS:
 - Backward-compatible fallback (natural language) is tolerated, but command-style is strongly preferred.
 
 ALWAYS output in the XML format - no additional text outside tags."""
+
+
+def step_by_step_1vlm_system_zeroshot(**kwargs) -> str:
+    """System prompt for single-VLM step-by-step navigation with integrated continuation check."""
+    return """You are a skilled UAV navigation assistant guiding a drone to execute missions"""
