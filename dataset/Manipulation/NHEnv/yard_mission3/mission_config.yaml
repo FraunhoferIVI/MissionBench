@@ -1,0 +1,54 @@
+camera:
+  fov: 90
+  height: 1080
+  pitch: -45.0
+  roll: 0.0
+  width: 1920
+  yaw: 0.0
+drone_start_pose:
+  x: 6.05448
+  y: -31.9212
+  yaw: -96.00002465842805
+  z: -35.9397
+ground_truth:
+  depth: 65.43394779151339
+  high_level_gt:
+  - ''
+  - ''
+  - ''
+  point:
+  - -1
+  - -1
+  task_gt: 'drop'
+  waypoint_gt:
+    x: 23.5575
+    y: -84.8067
+    yaw: -90.99992759676512
+    z: -1.61231
+instruction: Navigate to the concrete yard on the right side of the road in between
+  the two buildings and descend to the yard and drop the medical supplies on the center
+  of the yard
+langsmith_logging: false
+metadata:
+  difficulty_description: line of sight between the target but with some obstacles,
+    requires forward, descend and some maneuvering to complete the mission
+  difficulty_level: medium
+  environment: NHEnv
+  target_object: yard
+  task: navigate to particular viewpoint
+  task_category: manipulation
+  task_description: navigate to a specific location or angle for observation
+models_related:
+  high_level_model: gpt-4.1-2025-04-14
+  low_level_model: gpt-4.1-2025-04-14
+  next_action_model_name: gemini-2.5-pro
+  temperature: 0
+name: yard_mission3
+target_object: yard
+tolerances:
+  MAX_ACTIONS: 20
+  MAX_STEP_SIZE: 17
+  x: 5
+  y: 5
+  yaw: 15
+  z: 5

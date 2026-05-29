@@ -1,0 +1,64 @@
+camera:
+  fov: 90
+  height: 1080
+  pitch: -45.0
+  roll: 0.0
+  width: 1920
+  yaw: 0.0
+drone_start_pose:
+  x: 128.486
+  y: 12.8351
+  yaw: -90
+  z: -47.6715
+ground_truth:
+  depth: 0.0
+  high_level_gt:
+  - ''
+  - ''
+  - ''
+  point:
+  - 532
+  - 100
+  spatial_results:
+    bb:
+    - 450
+    - 300
+    - 560
+    - 560
+    depth: 85.0
+    label: intersection
+  waypoint_gt:
+    x: 128.486
+    y: 12.8351
+    yaw: -90
+    z: -47.6715
+instruction: Follow the main road and perform a patrol mission around the neighborhood,
+  this includes travelling straight and turning along the main road until you have
+  fully patrolled the area and returned to the same starting point. The goal is to
+  just navigate around the neighborhood by exactly following the main road ahead.It
+  is not required to turn in between at any intermediate junction, when the road curves,
+  follow the curve.
+langsmith_logging: false
+metadata:
+  difficulty: Hard
+  environment: NHEnv
+  target_object: red_car
+  task_category: patrol
+models_related:
+  high_level_model: gpt_5
+  low_level_model: gpt_5
+  next_action_model_name: gpt_5
+  temperature: 0
+name: main_road_mission3
+skip_hlap_inference: false
+skip_spatial_inference: false
+skip_vlm_inference: false
+skip_waypoint_refinement: true
+target_object: main_road
+tolerances:
+  MAX_ACTIONS: 50
+  MAX_STEP_SIZE: 20
+  x: 5
+  y: 5
+  yaw: 15
+  z: 5

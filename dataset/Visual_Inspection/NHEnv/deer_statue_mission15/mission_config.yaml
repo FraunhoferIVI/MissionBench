@@ -1,0 +1,61 @@
+camera:
+  fov: 90
+  height: 1080
+  pitch: -45.0
+  roll: 0.0
+  width: 1920
+  yaw: 0.0
+drone_start_pose:
+  x: 109.131
+  y: 93.8093
+  yaw: 90.00002321759342
+  z: -28.5464
+ground_truth:
+  depth: 56.85245730423621
+  high_level_gt:
+  - ''
+  - ''
+  - ''
+  point:
+  - 532
+  - 100
+  spatial_results:
+    bb:
+    - 488
+    - 194
+    - 505
+    - 241
+    depth: 54.10
+    label: "statue"
+      
+  task_gt: It is a deer statue
+  waypoint_gt:
+    x: 106.272
+    y: 144.734
+    yaw: -1.9999959472942035
+    z: -3.4326
+instruction: Inspect the statue and find out what it is about. Taking a look at the statue from the front side will reveal the detail. The task is to find out what the statue is.
+langsmith_logging: true
+metadata:
+  difficulty: Hard
+  environment: NHEnv
+  target_object: deer_statue
+  task_category: Visual_Inspection
+models_related:
+  high_level_model: gpt-4.1-2025-04-14
+  low_level_model: gpt-4.1-2025-04-14
+  next_action_model_name: gemini-2.5-pro
+  temperature: 0
+name: deer_statue_mission15
+skip_hlap_inference: false
+skip_spatial_inference: false
+skip_vlm_inference: false
+skip_waypoint_refinement: true
+target_object: deer_statue
+tolerances:
+  MAX_ACTIONS: 20
+  MAX_STEP_SIZE: 15
+  x: 5
+  y: 5
+  yaw: 15
+  z: 5

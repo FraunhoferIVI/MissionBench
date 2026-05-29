@@ -312,6 +312,35 @@ def node_generate_step_by_step_action(state: StepByStepState) -> Dict:
     Returns:
         Dict with 'raw_response' key containing VLM output
     """
+    if state["model_name"] == "random_actions":
+        import random
+        possible_action_primitives = ["navigation done", "move_forward", "move_backward", "strafe_left", "strafe_right", "ascend", "descend", "turn_left", "turn_right"]
+        random_action = random.choice(possible_action_primitives)
+        mission_benchmark = state["mission"]
+        tolerances = state.get("tolerances", mission_benchmark.get("tolerances", {}))
+        max_step_size = tolerances.get("MAX_STEP_SIZE", 10)
+        max_turn_size = max_step_size * 3
+        task_gt = ""
+        if random_action in ["move_forward", "move_backward", "strafe_left", "strafe_right", "ascend", "descend"]:
+            magnitude = round(random.uniform(0.5, max_step_size), 2)
+            random_action = f"{random_action}({magnitude})"
+        elif random_action in ["navigation done"]:
+            random_action = f"{random_action}"
+            mission_type = mission_benchmark["metadata"]["task_category"]
+            if "manip" in mission_type.lower():
+                task_gt = random.choice(["drop", "", "collect", "land"])
+            elif "patrol" in mission_type.lower():
+                task_gt = random.choice(["patrol complete", ""])
+        else:
+            angle = round(random.uniform(5, max_turn_size), 2)
+            random_action = f"{random_action}({angle})"
+        if state.get("verbose"):
+            print(f"\n Randomly selected action: {random_action}")
+        # decorate with same LLM format
+
+        output_formatted_random_action = f"<Reasoning> empty task_gt: {task_gt} </Reasoning>|<Action>{random_action}</Action>"
+        return {"raw_response_hlap_step_by_step": output_formatted_random_action}
+
     step_start = time.time()
     if state.get("verbose"):
         print(f"\n Generating step by step action with model: {state['model_name']}")

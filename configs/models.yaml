@@ -78,3 +78,6 @@ qwen:
 intern:
   intern_vl_3.5:
     model_name: "llama-cpp-intern_vl_3.5" # local model
+random: 
+  random_actions_1:
+    model_name: "random_actions" # local model
