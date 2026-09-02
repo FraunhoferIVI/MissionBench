@@ -2,6 +2,18 @@
 
 # MissionBench: Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents
 
+<p align="center">
+  <a href="https://gomtae.github.io/publications/missionbench">
+    <img src="https://img.shields.io/badge/Project-Website-0A66C2.svg" alt="Project Website">
+  </a>
+  <a href="https://arxiv.org/abs/2607.22014">
+    <img src="https://img.shields.io/badge/arXiv-2604.02327-b31b1b.svg" alt="arXiv">
+  </a>
+  <a href="https://creativecommons.org/licenses/by/4.0/">
+  <img src="https://img.shields.io/badge/License-CC%20BY%204.0-red.svg" alt="Creative Commons Attribution 4.0 International">
+  </a>
+</p>
+
 MissionBench is a UAV autonomous mission execution framework integrated with **Cosys-AirSim** and **Vision–Language Models (VLMs)** for tasks such as patrol, visual inspection, manipulation, and package delivery.
 The system supports **Gemini, GPT, AWS Nova, and Anthropic models**, configurable via YAML files.
 
@@ -136,3 +148,16 @@ This includes:
 - [Cosys-AirSim](https://github.com/Cosys-Lab/Cosys-AirSim)
 - [Langgraph](https://github.com/langchain-ai/langgraph)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
+
+## Citation 
+
+If you use this work, please cite:
+
+```tex
+@misc{ruthardt2026steervit,
+      title={Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents}, 
+      author={Suman Navaratnarajah and Taehyoung Kim and Jona Ruthardt and Ishaan Bhimwal and Ryousuke Yamada and Yannik Blei and Wolfram Burgard and Yuki M Asano},
+      journal={arXiv:2607.22014},
+      year={2026}
+}
+```
